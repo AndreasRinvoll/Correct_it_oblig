@@ -66,13 +66,28 @@ body {
 .main {
   grid-row: 1/9;
   grid-column: auto;
-  padding: 2rem;
   height: auto;
   background-color: rgba(95, 158, 160, 0.781);
   border-top: 2px black solid;
+  display: table;
+  width: 100vw;
 }
 
 #logo {
+  height: 19vh;
+  width: 19vh;
+  padding-bottom: 0;
+  padding-top: 1vh;
+  padding-bottom: 0vh;
+}
+
+.footertxt{
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 8vw;
+  font-size: 20pt;
+  font-weight: bold;
+  color: rgb(43, 42, 42);
 }
 
 h2 {
@@ -91,7 +106,7 @@ h3 {
 #studentdiv {
   animation: changeBg 10s infinite; 
   width: 100vw; 
-  height: 70vh; 
+  height: 80vh; 
   animation-timing-function: steps(1, end); 
   background-size: 100% 100%;
 }
