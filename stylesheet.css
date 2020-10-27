@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 #container {
@@ -8,7 +9,6 @@ body {
   grid-template-columns: auto;
   grid-auto-rows: minmax(100px, 100px);
   grid-auto-columns: minmax(100px, 100px);
-  grid-gap: 1vw;
 }
 
 .navigationbar {
@@ -19,6 +19,7 @@ body {
   left: 1;
   width: 100%;
   padding: 1rem;
+  border-bottom: 2px black outset;
 }
 
 .navigationbar a {
@@ -58,50 +59,48 @@ body {
 .background {
   grid-row: 1/9;
   grid-column: auto;
-  background-size: cover;
+  background-size: contain;
   background-position: left;
-  background-image: url(/img/pexels-pixabay-students.jpg);
 }
 
 .main {
   grid-row: 1/9;
   grid-column: auto;
   padding: 2rem;
-  margin-top: 5rem;
   height: auto;
   background-color: rgba(95, 158, 160, 0.781);
+  border-top: 2px black solid;
 }
 
 #logo {
-  margin-bottom: -7rem;
-  margin-top: 3rem;
 }
 
-h1 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 5rem;
-  margin-top: -1rem;
-  color: white;
-}
 h2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 4rem;
+  margin-top: -1rem;
+  color: white;
 }
 h3 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin-top: 5rem;
   color: white;
   text-decoration: underline;
+  font-style: italic;
 }
-#mydiv {
+#studentdiv {
   animation: changeBg 10s infinite; 
-  width: 50vw; 
-  height: 50vh; 
+  width: 100vw; 
+  height: 70vh; 
   animation-timing-function: steps(1, end); 
   background-size: 100% 100%;
-  float: right;
-  border-radius: 40px;
-  
 }
+
+#studentdiv > *{
+  text-align: left;
+  padding-left: 10px;
+}
+
 @keyframes changeBg{
  0%,100%  {background-image:linear-gradient(to bottom, rgba(12, 40, 196, 0.637), rgba(81, 22, 190, 0.637)),
   url('img/student3.png');}
