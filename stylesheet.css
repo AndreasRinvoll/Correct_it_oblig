@@ -64,7 +64,7 @@ body {
 }
 
 .main {
-  grid-row: 1/;
+  grid-row: 1/10;
   grid-column: auto;
   padding: 2rem;
   margin-top: 5rem;
