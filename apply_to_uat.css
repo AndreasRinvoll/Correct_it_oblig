@@ -1,0 +1,97 @@
+#applyContainer{
+    background-color: rgba(95, 158, 160, 0.425);
+    height: 90vh;
+    padding-top: 10vh;
+}
+
+#applyContainer span{
+    padding-left: 10px;
+}
+#applynow{
+    padding-left: 30px;
+}
+
+label{
+    float: left;
+    clear: left;
+    width: 120px;
+    text-align: right;
+    padding: 4px;
+}
+input {
+  float: left;
+}
+
+@media screen and (max-width: 1000px) {  /* Makes sure "Apply Now!" Is always never hidden by the nav-bar */
+    #applyContainer {
+        padding-top: 20vh;
+    }
+    .applyContent{
+        visibility: hidden;
+    }
+  }
+
+.textField{
+    padding: 3px 3px;
+    border: 1px solid black;
+    background-color: #f1f1f1;
+}
+
+input[type=text]:focus {
+    background-color: rgb(70, 70, 70);
+    color: white;
+  }
+
+  
+input[type=text]:focus {
+    width: 200px;
+}
+
+select {
+    padding: 3px 4px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+  
+  
+#nextBtn {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: larger;
+    margin-left: 129px;
+    margin-bottom: 20px;
+    border: 0.5px solid black;
+    transition: 0.3s;
+}
+
+#nextBtn:hover{
+    background: slategray;
+    color: white;  
+}
+
+.applyContent{
+    height: 50vh;
+    width: 60vw;
+    float: right;
+    border: 2px black solid;
+    margin: 30px;
+    padding: 9px;
+    border-radius: 7px;
+}
+
+.contentH1{
+    font-size: 30pt;
+    color: black;
+    text-decoration: underline;
+}
+
+.contentH3{
+    font-size: 14pt;
+    color: black;
+}
