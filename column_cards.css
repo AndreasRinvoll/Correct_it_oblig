@@ -26,8 +26,9 @@
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.356);
   border-radius: 0.5rem;
-  padding: 1rem;
-  margin: 1rem;
+  padding: 1.5rem;
+  padding-bottom: 0rem;
+  margin: 0.5rem;
 }
 
 .degrees a {
@@ -52,6 +53,17 @@
 
 .degrees h2 {
   text-decoration: underline;
+  color: black;
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: rgb(245, 245, 245);
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.452);
+}
+
+.column_cards {
+  margin-top: 6rem;
 }
 
 /*Responsive columns*/

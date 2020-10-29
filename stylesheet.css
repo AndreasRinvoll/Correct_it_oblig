@@ -67,7 +67,7 @@ body {
   grid-row: 1/10;
   grid-column: auto;
   height: auto;
-  background-color: rgba(95, 158, 160, 0.781);
+  background-color: rgb(245, 245, 245);
   border-top: 2px black solid;
   display: table;
   width: 100vw;
