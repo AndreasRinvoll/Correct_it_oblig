@@ -90,6 +90,11 @@ body {
   color: rgb(43, 42, 42);
 }
 
+.construction {
+  margin: 20rem;
+  font-size: larger;
+}
+
 h2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 4rem;
