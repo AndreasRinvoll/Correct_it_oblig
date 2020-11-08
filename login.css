@@ -21,7 +21,7 @@
   clear: both;
 }
 
-.degrees {
+.login-menu {
   background-color: rgba(95, 158, 160, 0.425);
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.356);
@@ -32,7 +32,7 @@
 }
 
 
-.degrees h2 {
+.login-menu h2 {
   text-decoration: underline;
   color: black;
   font-size: 1.5rem;
@@ -76,22 +76,14 @@ button:hover {
 
 .imagecontainer {
   text-align: center;
-  margin: 24px 0 12px 0;
-}
-
-image.avatar {
-  width: 40%;
-  border-radius: 50%;
 }
 
 .forgot_password {
-  padding: 1rem;
   padding-bottom: 2rem;
 }
 
 span.password {
   float: right;
-  padding-top: none;
 }
 
 @media screen and (max-width: 300px) {
