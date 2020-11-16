@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-/*Float two and two columns side by side*/
+/*Float three and three columns side by side*/
 .column {
   float: left;
   width: 33%;
@@ -11,18 +11,18 @@
 
 .columnProf {
   float: left;
-  width: 20%;
-  margin-left: 6%;
+  width: 33.3333%;
+  /*margin-left: 6%;
   margin-right: 6%;
   margin-top: 3%;
   margin-bottom: 3%;
-  padding: 0 10px;
+  padding: 0 0px;*/
 }
 
 
 /*Remove extra left and right margins, due to padding*/
 .row {
-  margin: 0 -5px;
+  margin: 0 0px;
 }
 
 /*Clear floats after the columns*/
@@ -85,12 +85,25 @@
     margin-bottom: 20px;
   }
   .columnProf{
-    width: 60%;
+    width: 100%;
     display: block;
-    margin-bottom: 20px;
-    margin-left: 25vw;
+    padding: 2rem;
+    /*margin-bottom: 20px;
+    margin-left: 25vw;*/
   }
 }
+
+@media screen and (max-width: 600px) {
+  .columnProf{
+    width: 100%;
+    display: block;
+    padding: 0rem;
+    /*margin-bottom: 20px;
+    margin-left: 25vw;*/
+  }
+}
+
+
 
 .contactPerson{
   border: 1px solid black;
@@ -113,7 +126,7 @@
 }
 .profContact{
   margin-bottom: 3vh;
-  height: 10vh;
+  height: 13vh;
   width: 100%;
   background-color: rgba(95, 158, 160, 0.425);
   padding-top: 5%;

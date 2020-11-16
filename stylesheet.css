@@ -1,15 +1,20 @@
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+*{
+  box-sizing: border-box;
 }
 
-#container {
+body,html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /*overflow-x: hidden;*/
+}
+
+/*#container {
   display: grid;
   grid-template-columns: auto;
   grid-auto-rows: minmax(100px, 100px);
   grid-auto-columns: minmax(100px, 100px);
-}
+}*/
 
 .navigationbar {
   overflow: hidden;
@@ -19,7 +24,7 @@ body {
   left: 1;
   width: 100%;
   padding: 1rem;
-  border-bottom: 2px black outset;
+  border-bottom: 1px black outset;
 }
 
 .navigationbar a {
@@ -27,14 +32,10 @@ body {
   display: block;
   color: black;
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
   text-decoration: none;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: larger;
-}
-
-.navigationbar p {
-  text-align: center;
 }
 
 .navigationbar a:hover {
@@ -56,17 +57,17 @@ body {
   }
 }*/
 
-.background {
+/*.background {
   grid-row: 1/9;
   grid-column: auto;
   background-size: contain;
   background-position: left;
-}
+}*/
 #maincontact{
   margin-top: 100px;
 }
 
-.main {
+/*.main {
   grid-row: 1/10;
   grid-column: auto;
   height: auto;
@@ -74,7 +75,7 @@ body {
   border-top: 2px black solid;
   display: table;
   width: 100vw;
-}
+}*/
 
 #logo {
   height: 19vh;
@@ -84,18 +85,43 @@ body {
   padding-bottom: 0vh;
 }
 
-.footertxt {
+/*.footertxt {
   display: table-cell;
   vertical-align: middle;
   padding-left: 8vw;
   font-size: 20pt;
   font-weight: bold;
   color: rgb(43, 42, 42);
-}
+}*/
 
 .construction {
-  margin: 20rem;
+  margin: 5rem;
+  padding-top: 10rem;
   font-size: larger;
+  height: 80%;
+}
+
+/*Ny footer*/
+.footer{
+  background-color: rgb(245, 245, 245);
+  overflow: hidden;
+  /*position: fixed;*/
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-element{
+  float: left;
+  display: block;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.footer-text{
+  float: left;
+  padding: 1rem;
+  padding-top: 3rem;
+  font-size: 36px;
 }
 
 h2 {
@@ -111,7 +137,29 @@ h3 {
   text-decoration: underline;
   font-style: italic;
 }
-#studentdiv {
+
+/*Ny studentdiv*/
+.studentdiv{
+  background-image: linear-gradient( rgba(0, 128, 128, 0.678), rgba(0, 128, 128, 0.678)),
+  url(student4.png);
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 128, 128, 0.39);
+  border-bottom: solid 1px black;
+}
+
+.studentdiv h2,
+.studentdiv h3{
+  text-shadow: 2px 2px black;
+  padding: 1rem;
+}
+
+
+
+
+/*#studentdiv {
   animation: changeBg 10s infinite;
   width: 100vw;
   height: 80vh;
@@ -122,9 +170,9 @@ h3 {
 #studentdiv > * {
   text-align: left;
   padding-left: 10px;
-}
+}*/
 
-@keyframes changeBg {
+/*@keyframes changeBg {
   0%,
   100% {
     background-image: linear-gradient(
@@ -182,4 +230,34 @@ h3 {
       ),
       url("student7.png");
   }
+}*/
+
+@media screen and (max-width: 1000px){
+  .footer-text{
+    font-size: 24px;
+  }
+  .studentdiv h2{
+    position: absolute;
+    bottom: 12%;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .footer-text{
+    float: none;
+    padding: 0.3rem;
+    padding-left: 2rem;
+    font-size: 24px;
+  }
+  .navigationbar a {
+    padding: 0.5rem;
+    font-size: 14px;
+  }
+  .top{
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 370px){
+
 }
