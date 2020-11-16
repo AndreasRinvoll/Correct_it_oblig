@@ -12,8 +12,8 @@
 </head>
 <body>
     <!--<div id="container">-->
-
-        <div class="navigationbar">
+    
+        <div class="navigationbar top">
             <a href="index.html">Home <img height="20px" src="iconmonstr-home-6-240.png" alt=""></a>
             <a href="degrees_overview.html">Degrees <img height="20px" src="iconmonstr-school-22-240.png" alt=""></a>
             <a class="active" href="apply_to_uat.html">Apply to UAT <img height="20px" src="iconmonstr-paper-plane-2-240.png" alt=""></a>
@@ -21,252 +21,285 @@
             <a href="login.html">Login <img height="20px" src="iconmonstr-user-20-240.png" alt=""></a>
         </div>
 
+        <div class="form top">
             <div class="applyContainer">
-                <h1 id="applynow">Apply now!</h1>
-                <br>
-                <label>First Name: </label> <input type="text" class="textField">
-                <br><br>
-                <label>Middle Name: </label> <input type="text" class="textField">
-                <br><br>
-                <label>Last Name: </label><input type="text" class="textField">
-                <br><br>
-                <label>Mailing address: </label> <input type="text" class="textField">
-                <br><br>
-                <label>City: </label><input type="text" class="textField">
-                <br><br>
-                <label>State: </label>
-                <select id="state">
-                    <option value="">Select</option>
-                    <option value="2">Alabama</option>
-                    <option value="1">Alaska</option>
-                    <option value="4">Arizona</option>
-                    <option value="3">Arkansas</option>
-                    <option value="5">California</option>
-                    <option value="6">Colorado</option>
-                    <option value="7">Connecticut</option>
-                    <option value="8">Delaware</option>
-                    <option value="9">Florida</option>
-                    <option value="10">Georgia</option>
-                    <option value="11">Hawaii</option>
-                    <option value="15">Idaho</option>
-                    <option value="13">Illinois</option>
-                    <option value="14">Indiana</option>
-                    <option value="12">Iowa</option>
-                    <option value="16">Kansas</option>
-                    <option value="17">Kentucky</option>
-                    <option value="18">Lousiana</option>
-                    <option value="21">Maine</option>
-                    <option value="20">Maryland</option>
-                    <option value="19">Massachusetts</option>
-                    <option value="22">Michigan</option>
-                    <option value="23">Minnesota</option>
-                    <option value="25">Mississippi</option>
-                    <option value="24">Missouri</option>
-                    <option value="26">Montana</option>
-                    <option value="27">Nebraska</option>
-                    <option value="33">Nevada</option>
-                    <option value="30">New Hampshire</option>
-                    <option value="31">New Jersey</option>
-                    <option value="32">New Mexico</option>
-                    <option value="34">New York</option>
-                    <option value="28">North Carolina</option>
-                    <option value="29">North Dakota</option>
-                    <option value="35">Ohio</option>
-                    <option value="36">Oklahoma</option>
-                    <option value="37">Oregon</option>
-                    <option value="38">Pennsylvania</option>
-                    <option value="53">Puerto Rico</option>
-                    <option value="39">Rhode Island</option>
-                    <option value="40">South Carolina</option>
-                    <option value="41">South Dakota</option>
-                    <option value="42">Tennessee</option>
-                    <option value="43">Texas</option>
-                    <option value="44">Utah</option>
-                    <option value="46">Vermont</option>
-                    <option value="45">Virginia</option>
-                    <option value="47">Washington</option>
-                    <option value="52">Washington DC</option>
-                    <option value="49">West Virginia</option>
-                    <option value="48">Wisconsin</option>
-                    <option value="50">Wyoming</option>
-                </select>
-                <br><br>
-                <label>Zip Code: </label><input type="text" class="textField">
-                <br><br>
-                <label>Phone: </label><input type="tel" class="textField">
-                <br><br>
-                <label>Email: </label><input type="text" class="textField">
-                <br><br>
-                <label>Confirm Email: </label><input type="text" class="textField">
-                <br><br>
-                <label>Date of Birth: </label>
-                <select id="dobmonth">
-                    <option>MM</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                    <option>11</option>
-                    <option>12</option>
-                </select>
-                <select id="dobday">
-                    <option>DD</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                    <option>11</option>
-                    <option>12</option>
-                    <option>13</option>
-                    <option>14</option>
-                    <option>15</option>
-                    <option>16</option>
-                    <option>17</option>
-                    <option>18</option>
-                    <option>19</option>
-                    <option>20</option>
-                    <option>21</option>
-                    <option>22</option>
-                    <option>23</option>
-                    <option>24</option>
-                    <option>25</option>
-                    <option>26</option>
-                    <option>27</option>
-                    <option>28</option>
-                    <option>29</option>
-                    <option>30</option>
-                    <option>31</option>
-                </select>
-                <select id="dobyear">
-                    <option value="">YYYY</option>
-                    <option value="19520">2006</option>
-                    <option value="19519">2005</option>
-                    <option value="18192">2004</option>
-                    <option value="18191">2003</option>
-                    <option value="18190">2002</option>
-                    <option value="18189">2001</option>
-                    <option value="18188">2000</option>
-                    <option value="14507">1999</option>
-                    <option value="14508">1998</option>
-                    <option value="14509">1997</option>
-                    <option value="14510">1996</option>
-                    <option value="14511">1995</option>
-                    <option value="14512">1994</option>
-                    <option value="14513">1993</option>
-                    <option value="14514">1992</option>
-                    <option value="14515">1991</option>
-                    <option value="14516">1990</option>
-                    <option value="14517">1989</option>
-                    <option value="14518">1988</option>
-                    <option value="14519">1987</option>
-                    <option value="14520">1986</option>
-                    <option value="14521">1985</option>
-                    <option value="14522">1984</option>
-                    <option value="14523">1983</option>
-                    <option value="14524">1982</option>
-                    <option value="14525">1981</option>
-                    <option value="14526">1980</option>
-                    <option value="14527">1979</option>
-                    <option value="14528">1978</option>
-                    <option value="14529">1977</option>
-                    <option value="14530">1976</option>
-                    <option value="14531">1975</option>
-                    <option value="14532">1974</option>
-                    <option value="14533">1973</option>
-                    <option value="14534">1972</option>
-                    <option value="14535">1971</option>
-                    <option value="14536">1970</option>
-                    <option value="14537">1969</option>
-                    <option value="14538">1968</option>
-                    <option value="14539">1967</option>
-                    <option value="14540">1966</option>
-                    <option value="14541">1965</option>
-                    <option value="14542">1964</option>
-                    <option value="14543">1963</option>
-                    <option value="14544">1962</option>
-                    <option value="14545">1961</option>
-                    <option value="14546">1960</option>
-                    <option value="14547">1959</option>
-                    <option value="14548">1958</option>
-                    <option value="14549">1957</option>
-                    <option value="14550">1956</option>
-                    <option value="14551">1955</option>
-                    <option value="14552">1954</option>
-                    <option value="14553">1953</option>
-                    <option value="14554">1952</option>
-                    <option value="14555">1951</option>
-                    <option value="14556">1950</option>
-                    <option value="14557">1949</option>
-                    <option value="14558">1948</option>
-                    <option value="14559">1947</option>
-                    <option value="14560">1946</option>
-                    <option value="14561">1945</option>
-                    <option value="14562">1944</option>
-                    <option value="14563">1943</option>
-                    <option value="14564">1942</option>
-                    <option value="14565">1941</option>
-                    <option value="14566">1940</option>
-                    <option value="14567">1939</option>
-                    <option value="14568">1938</option>
-                    <option value="14569">1937</option>
-                    <option value="14570">1936</option>
-                    <option value="14571">1935</option>
-                    <option value="14572">1934</option>
-                    <option value="14573">1933</option>
-                    <option value="14574">1932</option>
-                    <option value="14575">1931</option>
-                    <option value="14576">1930</option>
-                    <option value="14577">1929</option>
-                    <option value="14578">1928</option>
-                    <option value="14579">1927</option>
-                    <option value="14580">1926</option>
-                    <option value="14581">1925</option>
-                    <option value="14582">1924</option>
-                    <option value="14583">1923</option>
-                    <option value="14584">1922</option>
-                    <option value="14585">1921</option>
-                </select>
-                <br><br>
-                <label>SSN: </label><input type="text" class="textField">
-                <br><br>
-                <a href="#" onclick="location.href='construction.html'" id="nextBtn">Next <img height="20px" src="iconmonstr-arrow-28-240.png" alt=""></a>
+                <h1 class="title">Apply now!</h1>
+                
+                <form>
+                    <div class="data">
+                        <label>First Name: </label><br>
+                        <input type="text" class="textField">
+                    </div>
 
-                <!--<br><br><br>-->
-                <!--<div class="main">
-                    <img id="logo" src="uat-logo.png" alt="UAT logo">
-                    <span class="footertxt">LEARN.</span><span class="footertxt">EXPERIENCE.</span><span class="footertxt">INNOVATE.</span>
-                </div>-->
+                    <div class="data">
+                        <label>Middle Name: </label><br>
+                        <input type="text" class="textField">
+                    </div>
+
+                    <div class="data">
+                        <label>Last Name: </label><br>
+                        <input type="text" class="textField">
+                    </div>
+
+                    <div class="data">
+                        <label>Mailing address: </label><br>
+                        <input type="text" class="textField">
+                    </div>
+
+                    <div class="data">
+                        <label>City: </label><br>
+                        <input type="text" class="textField">
+                    </div>
+
+                    <div class="data">
+                    <label>State: </label><br>
+                    <select>
+                        <option value="">Select</option>
+                        <option value="2">Alabama</option>
+                        <option value="1">Alaska</option>
+                        <option value="4">Arizona</option>
+                        <option value="3">Arkansas</option>
+                        <option value="5">California</option>
+                        <option value="6">Colorado</option>
+                        <option value="7">Connecticut</option>
+                        <option value="8">Delaware</option>
+                        <option value="9">Florida</option>
+                        <option value="10">Georgia</option>
+                        <option value="11">Hawaii</option>
+                        <option value="15">Idaho</option>
+                        <option value="13">Illinois</option>
+                        <option value="14">Indiana</option>
+                        <option value="12">Iowa</option>
+                        <option value="16">Kansas</option>
+                        <option value="17">Kentucky</option>
+                        <option value="18">Lousiana</option>
+                        <option value="21">Maine</option>
+                        <option value="20">Maryland</option>
+                        <option value="19">Massachusetts</option>
+                        <option value="22">Michigan</option>
+                        <option value="23">Minnesota</option>
+                        <option value="25">Mississippi</option>
+                        <option value="24">Missouri</option>
+                        <option value="26">Montana</option>
+                        <option value="27">Nebraska</option>
+                        <option value="33">Nevada</option>
+                        <option value="30">New Hampshire</option>
+                        <option value="31">New Jersey</option>
+                        <option value="32">New Mexico</option>
+                        <option value="34">New York</option>
+                        <option value="28">North Carolina</option>
+                        <option value="29">North Dakota</option>
+                        <option value="35">Ohio</option>
+                        <option value="36">Oklahoma</option>
+                        <option value="37">Oregon</option>
+                        <option value="38">Pennsylvania</option>
+                        <option value="53">Puerto Rico</option>
+                        <option value="39">Rhode Island</option>
+                        <option value="40">South Carolina</option>
+                        <option value="41">South Dakota</option>
+                        <option value="42">Tennessee</option>
+                        <option value="43">Texas</option>
+                        <option value="44">Utah</option>
+                        <option value="46">Vermont</option>
+                        <option value="45">Virginia</option>
+                        <option value="47">Washington</option>
+                        <option value="52">Washington DC</option>
+                        <option value="49">West Virginia</option>
+                        <option value="48">Wisconsin</option>
+                        <option value="50">Wyoming</option>
+                    </select>
+                    </div> <!--state-->
+
+                    <div class="data">
+                        <label>Zip Code: </label><br>
+                        <input type="text" class="textField">
+                    </div>
+
+                    <div class="data">
+                        <label>Phone: </label><br>
+                        <input type="tel" class="textField">
+                    </div>
+
+                    <div class="data">
+                        <label>Email: </label><br>
+                        <input type="text" class="textField">
+                    </div>
+
+                    <div class="data">
+                        <label>Confirm Email: </label><br>
+                        <input type="text" class="textField">
+                    </div>
+
+                    <div class="data">
+                    <label>Date of Birth: </label><br>
+                    <div class="birthdate">
+                        <select id="dobmonth">
+                            <option>MM</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                        </select>
+                        
+                        <select id="dobday">
+                            <option>DD</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                        </select>
+                        
+                        <select id="dobyear">
+                            <option value="">YYYY</option>
+                            <option value="19520">2006</option>
+                            <option value="19519">2005</option>
+                            <option value="18192">2004</option>
+                            <option value="18191">2003</option>
+                            <option value="18190">2002</option>
+                            <option value="18189">2001</option>
+                            <option value="18188">2000</option>
+                            <option value="14507">1999</option>
+                            <option value="14508">1998</option>
+                            <option value="14509">1997</option>
+                            <option value="14510">1996</option>
+                            <option value="14511">1995</option>
+                            <option value="14512">1994</option>
+                            <option value="14513">1993</option>
+                            <option value="14514">1992</option>
+                            <option value="14515">1991</option>
+                            <option value="14516">1990</option>
+                            <option value="14517">1989</option>
+                            <option value="14518">1988</option>
+                            <option value="14519">1987</option>
+                            <option value="14520">1986</option>
+                            <option value="14521">1985</option>
+                            <option value="14522">1984</option>
+                            <option value="14523">1983</option>
+                            <option value="14524">1982</option>
+                            <option value="14525">1981</option>
+                            <option value="14526">1980</option>
+                            <option value="14527">1979</option>
+                            <option value="14528">1978</option>
+                            <option value="14529">1977</option>
+                            <option value="14530">1976</option>
+                            <option value="14531">1975</option>
+                            <option value="14532">1974</option>
+                            <option value="14533">1973</option>
+                            <option value="14534">1972</option>
+                            <option value="14535">1971</option>
+                            <option value="14536">1970</option>
+                            <option value="14537">1969</option>
+                            <option value="14538">1968</option>
+                            <option value="14539">1967</option>
+                            <option value="14540">1966</option>
+                            <option value="14541">1965</option>
+                            <option value="14542">1964</option>
+                            <option value="14543">1963</option>
+                            <option value="14544">1962</option>
+                            <option value="14545">1961</option>
+                            <option value="14546">1960</option>
+                            <option value="14547">1959</option>
+                            <option value="14548">1958</option>
+                            <option value="14549">1957</option>
+                            <option value="14550">1956</option>
+                            <option value="14551">1955</option>
+                            <option value="14552">1954</option>
+                            <option value="14553">1953</option>
+                            <option value="14554">1952</option>
+                            <option value="14555">1951</option>
+                            <option value="14556">1950</option>
+                            <option value="14557">1949</option>
+                            <option value="14558">1948</option>
+                            <option value="14559">1947</option>
+                            <option value="14560">1946</option>
+                            <option value="14561">1945</option>
+                            <option value="14562">1944</option>
+                            <option value="14563">1943</option>
+                            <option value="14564">1942</option>
+                            <option value="14565">1941</option>
+                            <option value="14566">1940</option>
+                            <option value="14567">1939</option>
+                            <option value="14568">1938</option>
+                            <option value="14569">1937</option>
+                            <option value="14570">1936</option>
+                            <option value="14571">1935</option>
+                            <option value="14572">1934</option>
+                            <option value="14573">1933</option>
+                            <option value="14574">1932</option>
+                            <option value="14575">1931</option>
+                            <option value="14576">1930</option>
+                            <option value="14577">1929</option>
+                            <option value="14578">1928</option>
+                            <option value="14579">1927</option>
+                            <option value="14580">1926</option>
+                            <option value="14581">1925</option>
+                            <option value="14582">1924</option>
+                            <option value="14583">1923</option>
+                            <option value="14584">1922</option>
+                            <option value="14585">1921</option>
+                        </select>
+
+                    </div>
+                    
+                    </div> <!--birthdate-->
+
+                    <div class="data">
+                        <a href="#" onclick="location.href='construction.html'" id="nextBtn">Next <img height="20px" src="iconmonstr-arrow-28-240.png" alt=""></a>
+                    </div>
+                </form>
             </div> <!--applyContainer-->
 
             <div class="applyContent">
-                <div id="fastApp">
+                <div>
                     <span class="contentH1">UAT'S FASTAPP</span><br><br>
                     <span class="contentH3">Our new FastApp online application form makes it convenient to apply, helps us determine if you qualify for academic scholarships and puts you one step closer to immersing yourself in a University dedicated to leading-edge technology. Find out if you are accepted in only 3 weeks.
                     </span><br><br>
                 </div>
-                <div id="atUAT">
-                    <span class="contentH1">AT UAT, WE GET IT THAT EVERY STUDENT IS DIFFERENT.</span><br><br>
+                <div>
+                    <span class="contentH1">EVERY STUDENT IS DIFFERENT</span><br><br>
                     <span class="contentH3">For too long, technophiles like yourself have had to struggle in a society that doesn't fit them, but now everyone is starting to realize technology runs our world. UAT has created the ideal environment for you. We look at applicants holistically—here you're more than just a GPA. We look at those elements that make you unique, as an individual, to determine if you're a good candidate to excel at UAT.
 
-                        Completing the easy, convenient UAT FastApp brings you one step closer to finding your fit and beginning your future at UAT*.
+                    Completing the easy, convenient UAT FastApp brings you one step closer to finding your fit and beginning your future at UAT*.
                     </span>
                 </div>
             </div><!--applyContent-->
-
-        <!--</div>-->
-    <!--</div>-->
+        </div> <!--form-->
+        
 
     <div class="footer">
         <div class="footer-element"><img id="logo" src="uat-logo.png" alt="UAT logo"></div>
