@@ -95,7 +95,8 @@ body,html {
 }*/
 
 .construction {
-  margin: 5rem;
+  margin: 3rem;
+  margin-top: 7rem;
   padding-top: 10rem;
   font-size: larger;
   height: 80%;
@@ -259,5 +260,8 @@ h3 {
 }
 
 @media screen and (max-width: 370px){
+  .studentdiv h2{
+    font-size: 3rem;
+  }
 
 }
