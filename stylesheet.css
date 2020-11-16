@@ -263,5 +263,18 @@ h3 {
   .studentdiv h2{
     font-size: 3rem;
   }
+ 
+  .footer-text{
+    font-size: 16px;
+  }
 
+}
+
+@media screen and (max-width: 319px){
+   .top{
+    padding-top: 4rem;
+  }
+  .studentdiv h2{
+    bottom: 14%;
+  }
 }

@@ -86,7 +86,16 @@ span.password {
   float: right;
 }
 
-@media screen and (max-width: 300px) {
+/*Responsive columns*/
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 319px) {
   span.psw {
     display: block;
     float: none;
@@ -94,13 +103,7 @@ span.password {
   .cancelbtn {
     width: 100%;
   }
-}
-
-/*Responsive columns*/
-@media screen and (max-width: 1000px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
+  .avatar{
+    height: 100px;
   }
 }
