@@ -262,7 +262,9 @@ h3 {
 @media screen and (max-width: 370px){
   .studentdiv h2{
     font-size: 3rem;
+    bottom: 
   }
+}
  
   .footer-text{
     font-size: 16px;
@@ -291,4 +293,11 @@ h3 {
   .studentdiv h2{
     font-size: 2rem;
     right: 0%;
+  }
+}
+
+@media (min-height: 900px) and (max-width: 1000px) {
+  .studentdiv h2{
+    bottom: 15%;
+  }
 }

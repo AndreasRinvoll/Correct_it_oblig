@@ -140,10 +140,16 @@
     height: 15vh;
   }
 }
-
+@media screen and (max-height: 800px){
+  .profContact{
+    padding-top: 0;
+    height: 19vh;
+  }
+}
 @media (max-height: 320px) and (max-width: 600px) {
   .profContact{
     padding-top: 0;
     height: 19vh;
   }
 }
+
