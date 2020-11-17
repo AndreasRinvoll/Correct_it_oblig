@@ -278,3 +278,17 @@ h3 {
     bottom: 14%;
   }
 }
+
+/*Media query for mobiler i landskapsmodus*/
+@media (max-height: 500px) and (max-width: 900px) {
+  .studentdiv h2{
+    font-size: 1rem;
+    bottom: 15%;
+  }
+}
+
+@media screen and (max-height: 500px){
+  .studentdiv h2{
+    font-size: 2rem;
+    right: 0%;
+}

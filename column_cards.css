@@ -132,3 +132,18 @@
   padding-top: 5%;
   border: 1px solid black;
 }
+
+/*Media query for mobiler i landskapsmodus*/
+@media (max-height: 500px) and (max-width: 900px) {
+  .profContact{
+    padding-top: 0;
+    height: 15vh;
+  }
+}
+
+@media (max-height: 320px) and (max-width: 600px) {
+  .profContact{
+    padding-top: 0;
+    height: 19vh;
+  }
+}
